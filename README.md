@@ -1,16 +1,13 @@
-### Hi there 👋
+### Seja bem vindo,meu nome é Breno Alves Fagundes 😎👋
 
-<!--
-**BrenoAlvez/BrenoAlvez** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- 🤔 Procuro primeiro emprego na área! 😮
 
-Here are some ideas to get you started:
+- 🙆‍♂️ idade: 21 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🏡 Uberlândia-MG
+
+- 💻 Estudante em ADS (ANÁLISE E DESENVOLVIMENTO DE SISTEMAS 5º/10º PERÍODO) 
+
+- 👨‍💻 Atualmente Focado em:
+
+<!----> <img width='50' height '50' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"/>
