@@ -2,11 +2,11 @@
 
 - 🤔 Procuro primeiro emprego na área! 😮
 
-- 🙆‍♂️ idade: 21 
+- 🙆‍♂️ idade: 22 
 
 - 🏡 Uberlândia-MG
 
-- 💻 Estudante em ADS (ANÁLISE E DESENVOLVIMENTO DE SISTEMAS 5º/10º PERÍODO) 
+- 💻 Estudante em ADS (ANÁLISE E DESENVOLVIMENTO DE SISTEMAS 6º/10º PERÍODO) 
 
 - 👨‍💻 Atualmente Focado em:
 
