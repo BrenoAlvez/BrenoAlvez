@@ -1,0 +1,108 @@
+from tkinter import *
+from tkinter import Tk, ttk
+
+# cores
+co0 = "#2e2d2b"  # Preta
+co1 = "#feffff"  # branca
+co2 = "#4fa882"  # verde
+co3 = "#38576b"  # valor
+co4 = "#403d3d"   # letra
+co5 = "#e06636"   # - profit
+co6 = "#038cfc"   # azul
+co7 = "#3fbfb9"   # verde
+co8 = "#263238"   # + verde
+co9 = "#e9edf5"   # + verde
+co10 ="#6e8faf"  #
+co11 = "#f2f4f2"
+
+#criação da janela
+janela = Tk()
+janela.title("by:BrenoCode")
+janela.geometry('250x400')
+janela.configure(background=co1)
+janela.resizable(width=FALSE, height=FALSE)
+
+style= ttk.Style(janela)
+style.theme_use('clam')
+
+#FRAME---------------------------------------------
+
+FrameCima= Frame(janela, width=300, height=50, bg=co1, relief='flat')
+FrameCima.grid(row=0, column=0)
+
+FrameMeio= Frame(janela, width=300, height=90, bg=co1, relief='flat')
+FrameMeio.grid(row=1, column=0)
+
+FrameBaixo= Frame(janela, width=300, height=290, bg=co9, relief='flat')
+FrameBaixo.grid(row=2, column=0)
+
+
+#PARTE DE CIMA--------------------------------------------
+
+app_= Label(FrameCima, text='Orçamento', compound=LEFT, padx=5, relief=FLAT, anchor=NW, font=('Verdana 18'),bg=co1, fg=co4)
+app_.place(x=0, y=0)
+
+
+
+app_linha= Label(FrameCima, width=300, relief=FLAT, anchor=NW, font=('Verdana 10'),bg=co5, fg=co1)
+app_linha.place(x=0, y=45)
+
+
+#FUNÇÃO CALCULAR--------------------------------------------------
+def calcular():
+    #valores da tabela
+    renda_mensal= float(e_valor.get())
+
+    #Obtendo porcetagem 
+    obter_50_porcento = (50/100) * renda_mensal
+    obter_30_porcento = (30/100) * renda_mensal
+    obter_20_porcento = (20/100) * renda_mensal
+
+    l_necessidades['text']=('R${:,.2f}'.format(obter_50_porcento))
+    l_gastos['text']=('R${:,.2f}'.format(obter_30_porcento))
+    l_economia['text']=('R${:,.2f}'.format(obter_20_porcento))
+
+
+
+#FRAME MEIO-----------------------------------------------
+app_= Label(FrameMeio, text='Entrada da renda mensal: ', relief=FLAT, anchor=NW, font=('ivy 15'),bg=co1, fg=co4)
+app_.place(x=7,y=15)
+
+e_valor= Entry(FrameMeio, width=10, font=('ivy 14'), justify= 'center', relief='solid')
+e_valor.place(x=8, y=42)
+
+b_calcular= Button(FrameMeio,command=calcular, text='Calcular'.upper(), overrelief=RIDGE, anchor=NW, font=('ivy 8'),bg=co1, fg=co0)
+b_calcular.place(x=150,y=40)
+
+#FRAME  baixo-----------------------------------------------
+
+app_= Label(FrameBaixo, text='Seus números: 50% 30% 20%', width= 35, relief=FLAT, anchor=NW, font=('VERDANA 10'),bg=co3, fg=co1)
+app_.place(x=0,y=0)
+
+#NECESIDADES---------------------------------------------------------------------------
+l_total_necessidades= Label(FrameBaixo, text='Necessidades', width= 35, relief=FLAT, anchor=NW, font=('VERDANA 10'),bg=co9, fg=co0)
+l_total_necessidades.place(x=10,y=33)
+
+
+l_necessidades= Label(FrameBaixo, relief=FLAT, anchor=NW, width= 22, font=('VERDANA 12'),bg=co1, fg=co4)
+l_necessidades.place(x=10,y=55)
+
+#GASTOS ADICIONAIS----------------------------------------------------------------------------------
+
+l_gastos= Label(FrameBaixo, text='Gastos Adicionais', width= 35, relief=FLAT, anchor=NW, font=('VERDANA 10'),bg=co9, fg=co0)
+l_gastos.place(x=10,y=99)
+
+l_gastos= Label(FrameBaixo, relief=FLAT, anchor=NW, width= 22, font=('VERDANA 12'),bg=co1, fg=co4)
+l_gastos.place(x=10,y=123)
+
+#ECONOMIA----------------------------------------------------------------------------------------------
+
+l_economia= Label(FrameBaixo, text='Economias', width= 35, relief=FLAT, anchor=NW, font=('VERDANA 10'),bg=co9, fg=co0)
+l_economia.place(x=10,y=165)
+
+l_economia= Label(FrameBaixo, relief=FLAT, anchor=NW, width= 22, font=('VERDANA 12'),bg=co1, fg=co4)
+l_economia.place(x=10,y=189)
+
+
+
+janela.mainloop()
